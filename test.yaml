@@ -1,0 +1,9 @@
+---
+- name: Test Playbook
+  hosts: all
+  become : yes
+  become_method: sudo
+  tasks:
+    - name: Add the user 'olivia'
+      ansible.builtin.user:
+        name: ans
